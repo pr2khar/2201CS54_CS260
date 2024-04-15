@@ -7,6 +7,8 @@
 -- PRAKHAR SHUKLA
 -- Roll Number : 2201CS54
 
+use tut4;
+
 -- 1)
 select first_name, last_name
 from employees;
