@@ -5,6 +5,8 @@
 -- PRAKHAR SHUKLA
 -- Roll Number : 2201CS54
 
+use tut9;
+
 -- Query 1
 SELECT player_name
 FROM players
