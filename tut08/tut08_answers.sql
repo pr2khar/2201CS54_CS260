@@ -2,6 +2,9 @@
 -- 1.	The .sql files are run automatically, so please ensure that there are no syntax errors in the file. If we are unable to run your file, you get an automatic reduction to 0 marks.
 -- Comment in MYSQL 
 
+-- PRAKHAR SHUKLA
+-- Roll Number : 2201CS54
+
 ---1.
 DELIMITER //
 CREATE TRIGGER IncreaseSalaryTrigger
@@ -192,48 +195,7 @@ END;
 //
 DELIMITER ;
 
----python code to sent emails (read data from email_queue)
--- import smtplib
--- import mysql.connector
--- from email.message import EmailMessage
 
--- # Connect to the database
--- db = mysql.connector.connect(
---     host="your_host",
---     user="your_username",
---     password="your_password",
---     database="your_database"
--- )
--- cursor = db.cursor()
-
--- # Select unsent emails from the email_queue table
--- cursor.execute("SELECT id, recipient_email, subject, message FROM email_queue WHERE sent_at IS NULL")
--- emails = cursor.fetchall()
-
--- # Send emails
--- for email in emails:
---     msg = EmailMessage()
---     msg.set_content(email[3])
---     msg["Subject"] = email[2]
---     msg["From"] = "your_email@example.com"  # Change this to your email address
---     msg["To"] = email[1]
-
---     try:
---         # Send the email
---         with smtplib.SMTP("smtp.yourmailserver.com", 587) as smtp:
---             smtp.starttls()
---             smtp.login("your_email@example.com", "your_password")  # Change this to your email and password
---             smtp.send_message(msg)
-
---         # Mark the email as sent in the database
---         cursor.execute("UPDATE email_queue SET sent_at = CURRENT_TIMESTAMP WHERE id = %s", (email[0],))
---         db.commit()
---     except Exception as e:
---         print(f"Failed to send email: {e}")
-
--- # Close the database connection
--- cursor.close()
--- db.close()
 
 
 
