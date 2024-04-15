@@ -5,6 +5,8 @@
 -- PRAKHAR SHUKLA
 -- Roll Number : 2201CS54
 
+use tut7;
+
 ---1.
 DELIMITER //
 CREATE PROCEDURE CalculateAverageSalary(IN department_id_param INT, OUT avg_salary DECIMAL)
