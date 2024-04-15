@@ -5,28 +5,8 @@
 create database tut4;
 use tut4;
 
-CREATE TABLE departments (
-    department_id INT PRIMARY KEY,
-    department_name VARCHAR(255),
-    location VARCHAR(255)
-);
-
-CREATE TABLE employees (
-    emp_id INT PRIMARY KEY,
-    first_name VARCHAR(255),
-    last_name VARCHAR(255),
-    salary DECIMAL(10, 2),
-    department_id INT,
-    FOREIGN KEY (department_id) REFERENCES departments(department_id)
-);
-
-CREATE TABLE projects (
-    project_id INT PRIMARY KEY,
-    project_name VARCHAR(255),
-    budget DECIMAL(12, 2),
-    start_date DATE,
-    end_date DATE
-);
+-- PRAKHAR SHUKLA
+-- Roll Number : 2201CS54
 
 -- 1)
 select first_name, last_name
