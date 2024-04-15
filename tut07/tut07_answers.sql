@@ -2,6 +2,9 @@
 -- 1.	The .sql files are run automatically, so please ensure that there are no syntax errors in the file. If we are unable to run your file, you get an automatic reduction to 0 marks.
 -- Comment in MYSQL 
 
+-- PRAKHAR SHUKLA
+-- Roll Number : 2201CS54
+
 ---1.
 DELIMITER //
 CREATE PROCEDURE CalculateAverageSalary(IN department_id_param INT, OUT avg_salary DECIMAL)
