@@ -7,6 +7,8 @@
 -- PRAKHAR SHUKLA
 -- Roll Number : 2201CS54
 
+use tut3;
+
 -- 1)
 select first_name, last_name
 from students;
