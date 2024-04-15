@@ -5,6 +5,8 @@
 -- PRAKHAR SHUKLA
 -- Roll Number : 2201CS54
 
+use tut8;
+
 ---1.
 DELIMITER //
 CREATE TRIGGER IncreaseSalaryTrigger
